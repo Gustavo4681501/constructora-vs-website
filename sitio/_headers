@@ -15,8 +15,10 @@
 /assets/video/*
   Cache-Control: public, max-age=2592000
 
+# CSS y JS: el navegador y Cloudflare preguntan siempre si hay versión nueva (responde 304 si no cambió).
+# Con caché de un día, los cambios no se veían hasta 24 horas después de publicar.
 /assets/css/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
 
 /assets/js/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate

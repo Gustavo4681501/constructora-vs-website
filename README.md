@@ -21,6 +21,7 @@ Para ver el sitio en la computadora, abrir `sitio/index.html` con doble clic o c
 
 Colores y animación de la portada: ver `docs/colores-y-portada.md`.
 Cortes de ancho, títulos y cómo probar en teléfono: ver `docs/responsive.md`.
+Si un cambio publicado no se ve en el dominio: ver `docs/cache.md`.
 
 ## Formulario
 Por defecto abre WhatsApp (8666 1519) con el mensaje ya escrito. Para recibirlo también por correo:
