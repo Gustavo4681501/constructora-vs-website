@@ -17,7 +17,10 @@ Sitio estático (HTML, CSS y JavaScript, sin dependencias) listo para Cloudflare
 2. Custom domains > agregar `constructoravs.com` y `www.constructoravs.com`.
 3. Opcional: activar Web Analytics (gratis) y Email Routing para `info@constructoravs.com`.
 
-Para ver el sitio en la computadora sin servidor, abrir `sitio/index.html` (los enlaces se ajustan solos).
+Para ver el sitio en la computadora, abrir `sitio/index.html` con doble clic o con Live Server (los enlaces se ajustan solos en `file://`, `localhost` e IP de la red local).
+
+Colores y animación de la portada: ver `docs/colores-y-portada.md`.
+Cortes de ancho, títulos y cómo probar en teléfono: ver `docs/responsive.md`.
 
 ## Formulario
 Por defecto abre WhatsApp (8666 1519) con el mensaje ya escrito. Para recibirlo también por correo:

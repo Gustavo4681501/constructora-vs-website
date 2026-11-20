@@ -8,10 +8,14 @@
   var doc = document.documentElement;
   doc.classList.add('js');
 
-  /* 1. Vista previa sin servidor ------------------------------------------
+  /* 1. Vista previa en la computadora ---------------------------------------
      Los enlaces internos van sin ".html" (así los sirve Cloudflare Pages).
-     Si el sitio se abre con doble clic (file://), se les agrega la extensión. */
-  if (location.protocol === 'file:') {
+     Si el sitio se abre con doble clic (file://) o con un servidor local
+     (Live Server en localhost, 127.0.0.1 o la IP de la red de la casa, para
+     verlo en el celular), se les agrega la extensión.                       */
+  var local = location.protocol === 'file:' ||
+    /^(localhost|127\.0\.0\.1|\[::1\])$|\.localhost$|^192\.168\.\d+\.\d+$|^10\.\d+\.\d+\.\d+$/.test(location.hostname);
+  if (local) {
     document.querySelectorAll('a[href]').forEach(function (a) {
       var h = a.getAttribute('href');
       if (h === './') { a.setAttribute('href', 'index.html'); return; }

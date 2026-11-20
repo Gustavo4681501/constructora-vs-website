@@ -72,7 +72,38 @@
                 <linearGradient id="oro-techo" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="330">
                   <stop offset="0" stop-color="#F5DCA5"/><stop offset="0.45" stop-color="#DDB36A"/><stop offset="1" stop-color="#B98A45"/>
                 </linearGradient>
+                <!-- solo se ve lo que queda por encima del techo: los edificios salen de detrás -->
+                <clipPath id="sobre-techo"><path d="M204,10 L648,321 L720,321 L720,-80 L204,-80 Z"/></clipPath>
               </defs>
+              <!-- Los tres edificios del logo (mismos trazos del isotipo, con la base alargada para que no quede hueco bajo el techo) -->
+              <g clip-path="url(#sobre-techo)">
+                <g transform="translate(338.7 104.3) scale(0.7) translate(-421.5 -192)" stroke="#D0A35A" stroke-width="2.5" stroke-linejoin="miter" stroke-miterlimit="8">
+                  <g class="casa__edificio casa__edificio--1">
+                    <path d="M548,43 L621,83.15 L621,349.8 L548,301.69 Z" fill="#141413"/>
+                    <path d="M468,92.6 L548,43 L548,301.69 L468,248.96 Z" fill="#1D1C1B"/>
+                    <g fill="#D0A35A" stroke="none">
+                      <path d="M480,101.16 L489,95.58 L489,229.7 L480,223.47 Z"/><path d="M500,88.76 L509,83.18 L509,243.54 L500,237.31 Z"/><path d="M520,76.36 L529,70.78 L529,257.38 L520,251.15 Z"/>
+                      <path d="M568,88 L621,117.15 L621,126.15 L568,97 Z"/><path d="M568,134 L621,163.15 L621,172.15 L568,143 Z"/><path d="M568,180 L621,209.15 L621,218.15 L568,189 Z"/>
+                    </g>
+                  </g>
+                  <g class="casa__edificio casa__edificio--2">
+                    <path d="M678,140 L746,177.4 L746,432.18 L678,387.37 Z" fill="#171716"/>
+                    <path d="M583,198.9 L678,140 L678,387.37 L583,324.75 Z" fill="#232221"/>
+                    <g fill="#D0A35A" stroke="none">
+                      <path d="M583,228.9 L654,184.88 L654,194.88 L583,238.9 Z"/><path d="M583,258.9 L654,214.88 L654,224.88 L583,268.9 Z"/><path d="M583,288.9 L654,244.88 L654,254.88 L583,298.9 Z"/>
+                      <path d="M704,180.3 L708,182.5 L708,381.22 L704,378.45 Z"/><path d="M722,190.2 L726,192.4 L726,393.67 L722,390.91 Z"/>
+                    </g>
+                  </g>
+                  <g class="casa__edificio casa__edificio--3">
+                    <path d="M758,243 L816,274.9 L816,478.32 L758,440.09 Z" fill="#141413"/>
+                    <path d="M716,269.04 L758,243 L758,440.09 L716,412.41 Z" fill="#1D1C1B"/>
+                    <g fill="#D0A35A" stroke="none">
+                      <path d="M725,291.46 L758,271 L758,279 L725,299.46 Z"/><path d="M725,323.46 L758,303 L758,311 L725,331.46 Z"/><path d="M725,355.46 L758,335 L758,343 L725,363.46 Z"/>
+                      <path d="M780,281.1 L784,283.3 L784,433.8 L780,431.03 Z"/><path d="M796,289.9 L800,292.1 L800,444.87 L796,442.1 Z"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
               <path d="M-24,170 L204,10 L648,321 L204,27 Z" fill="url(#oro-techo)"/>
             </svg>
           </div>
@@ -179,7 +210,7 @@
       </div>
     </section>
 
-    <section class="seccion seccion--borde" aria-labelledby="zonas-t">
+    <section class="seccion seccion--oro" aria-labelledby="zonas-t">
       <div class="contenedor zonas">
         <div>
           <h2 id="zonas-t">Trabajamos en toda Guanacaste</h2>
